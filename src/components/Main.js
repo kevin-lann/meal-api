@@ -16,7 +16,9 @@ const Main = () => {
   }, []);
 
   const itemsList = items.map(({strMeal, strMealThumb, idMeal}) => {
-    return (
+    return ( <>
+        
+
         <section className="card">
             <img src={strMealThumb}/>
             <section className="content">
@@ -24,10 +26,20 @@ const Main = () => {
                 <p>#{idMeal}</p>
             </section>
         </section>
+      </>
     )
   })
 
-  return <div className="items-container">{itemsList}</div>
+  return (
+  <>
+      <div className="header">
+        <h1 className="title">Desserts 🍒</h1>
+      </div>
+
+      <div className="items-container">{itemsList}</div>
+  </>
+  )
+  
 }
 
 export default Main

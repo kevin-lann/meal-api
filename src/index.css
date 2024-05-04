@@ -41,3 +41,15 @@ img {
   height: 200px;
   width: 300px;
 }
+
+.header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 60pt;
+}
